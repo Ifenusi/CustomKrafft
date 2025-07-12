@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team - CustomKrafft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="Logo white.png"  alt="CustomKrafft Logo" class="logo-img" />Custom<span>Krafft</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 style="font-size: 3rem;">Proof of Excellence</h1>
+                <p class="hero-subtitle">Witness the transformation of visions into visual masterpieces</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" onclick="filterPortfolio('all')">All Projects</button>
+                <button class="filter-btn" onclick="filterPortfolio('logos')">Logos</button>
+                <button class="filter-btn" onclick="filterPortfolio('tshirts')">T-Shirts</button>
+                <button class="filter-btn" onclick="filterPortfolio('events')">Events</button>
+                <button class="filter-btn" onclick="filterPortfolio('packaging')">Packaging</button>
+                <button class="filter-btn" onclick="filterPortfolio('web')">Web Design</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="logos">
+                    <div class="portfolio-image">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Royal Tech Logo</h3>
+                        <p class="portfolio-category">Brand Identity</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="tshirts">
+                    <div class="portfolio-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Premium Event Tees</h3>
+                        <p class="portfolio-category">Custom Apparel</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-image">
+                        <i class="fas fa-calendar-star"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Tech Summit 2024</h3>
+                        <p class="portfolio-category">Event Branding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="packaging">
+                    <div class="portfolio-image">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Luxury Gift Boxes</h3>
+                        <p class="portfolio-category">Premium Packaging</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">E-commerce Platform</h3>
+                        <p class="portfolio-category">Web Development</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="logos">
+                    <div class="portfolio-image">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Diamond Luxury Brand</h3>
+                        <p class="portfolio-category">Luxury Branding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Music Festival Branding</h3>
+                        <p class="portfolio-category">Event Identity</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="packaging">
+                    <div class="portfolio-image">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Premium Wine Labels</h3>
+                        <p class="portfolio-category">Product Packaging</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="tshirts">
+                    <div class="portfolio-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Charity Campaign Merch</h3>
+                        <p class="portfolio-category">Social Impact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://wa.me/234813936310" class="floating-btn whatsapp" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/customkrafft?igsh=MXVpdDF3dTE3dHYwdw%3D%3D&utm_source=qr" class="floating-btn instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@customkrafft" class="floating-btn tiktok" title="TikTok" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="tel:+2348139363101" class="floating-btn call" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team - CustomKrafft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"> <img src="Logo white.png" alt="CustomKrafft Logo" class="logo-img" />Custom<span>Krafft</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 4rem 0;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 style="font-size: 3rem;">Let's Build Something Iconic</h1>
+                <p class="hero-subtitle">Ready to transform your brand? Let's start the conversation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p><strong>Call Us</strong></p>
+                            <p>+234(0)8139363101</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p><strong>Email Us</strong></p>
+                            <p>customkraftofficial@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <p><strong>WhatsApp</strong></p>
+                            <p>+234(0)8139363101</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Visit Our Studio</strong></p>
+                            <p>Lagos And Abuja Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 3rem;">
+                        <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Business Hours</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: By Appointment</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="project-type">Project Type *</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="">Select a service</option>
+                            <option value="branding">Brand Identity Design</option>
+                            <option value="packaging">Packaging & Customization</option>
+                            <option value="digital">Digital Presence</option>
+                            <option value="events">Event Branding</option>
+                            <option value="business-launch">Business Launch Support</option>
+                            <option value="premium">Premium Package</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Project Budget (Optional)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-100k">Under ₦100,000</option>
+                            <option value="100k-500k">₦100,000 - ₦500,000</option>
+                            <option value="500k-1m">₦500,000 - ₦1,000,000</option>
+                            <option value="1m-plus">₦1,000,000+</option>
+                            <option value="discuss">Let's Discuss</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project, goals, and vision..." required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <h3 style="color: var(--accent-gold); margin-bottom: 2rem;">Prefer Direct Contact?</h3>
+                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                    <a href="https://wa.me/2348139363101" class="cta-button" style="background: #25D366; text-decoration: none;">
+                        <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>Chat on WhatsApp
+                    </a>
+                    <a href="tel:+2348139363101" class="cta-button" style="text-decoration: none;">
+                        <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">Custom<span>Krafft</span></a>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="footer-text">&copy; 2024 CustomKrafft. All rights reserved.</p>
+            </div>
+        </div>
+
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://wa.me/2348139363101" class="floating-btn whatsapp" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/customkrafft?igsh=MXVpdDF3dTE3dHYwdw%3D%3D&utm_source=qr" class="floating-btn instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@customkrafft" class="floating-btn tiktok" title="TikTok" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="tel:+2348139363101" class="floating-btn call" title="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
